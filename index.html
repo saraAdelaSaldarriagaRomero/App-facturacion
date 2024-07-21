@@ -3,24 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Facturacion</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Enlace a tu hoja de estilos CSS -->
+    <title>App de Facturación</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Bienvenidos</h1>
+        <div class="logo">
+            <a href="">
+                <img src="https://i.ibb.co/80fbh8c/logoWeb.png" alt="logoWeb">
+            </a>
+        </div>
+        <h1>App de Facturación</h1>
     </header>
 
     <nav>
-        
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="facturas.html">Facturas</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
+            <li><a href="personal.html">Personal</a></li>
+        </ul>
     </nav>
 
     <main>
-       
-    </main>
+        <h1 class="inicio">BIENVENIDOS AL SISTEMA DE FACTURACIÓN <br>DE #HotDog</h1>
 
-    <footer>
-        <p>&copy; 2024 Tu Sara Saldarriaga. Todos los derechos reservados.</p>
-    </footer>
+        <div class="login-form">
+            <form action="index.html" method="post">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </div>
+    </main>
 </body>
 </html>
